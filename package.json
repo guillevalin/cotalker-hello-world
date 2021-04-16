@@ -6,14 +6,13 @@
   "scripts": {
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "local": "serverless offline",
-    "deploy": "serverless deploy",
-    "test": "cross-env NODE_ENV=dev mocha -r ts-node/register tests/*.test.ts --exit",
-    "coverage": "nyc --reporter lcov npm run test"
+    "deploy": "serverless deploy"
   },
   "pre-commit": [
     "lint"
   ],
   "dependencies": {
+    "@cotalker/cotalker-api": "^2.0.0",
     "dotenv": "^8.2.0",
     "mongoose": "^5.9.10"
   },
