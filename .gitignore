@@ -4,15 +4,14 @@ jspm_packages
 
 # Serverless directories
 .serverless
-
 .build
-
 .nyc_output
-
 coverage
-
 package-lock.json
-
 out-logger.json
-
 .DS_Store
+
+# configuration files
+config/.env.dev
+config/.env.stg
+config/.env.pro
