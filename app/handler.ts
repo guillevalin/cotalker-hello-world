@@ -21,5 +21,5 @@ export async function sendMessage (event: any, context: Context) {
   const channels = await channelApi.getChannelsId({ id: event.body });
   const users = await usersApi.getUsers({ id: channels.data.data.userIds});    
 
-  return MessageUtil.success(users.data.data.users.map(x => `${x.name.names} ${x.name.lastName}`));
+  return MessageUtil.success(users.data.data.users.map(x => `${x.name.names} ${x.name.lastName} !`));
 };
